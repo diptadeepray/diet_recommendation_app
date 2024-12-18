@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Diet Recommendation App</string>
+
+
+    <string-array name="activity_levels">
+        <item>Low</item>
+        <item>Moderate</item>
+        <item>Active</item>
+    </string-array>
+</resources>
