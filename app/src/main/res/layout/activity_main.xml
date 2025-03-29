@@ -9,6 +9,13 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="number" />
+
+    <EditText
         android:id="@+id/ageInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,13 +61,40 @@
     </RadioGroup>
 
     <Button
+        android:id="@+id/chooseTimeAndData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose time and date" />
+
+
+    <Button
         android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Get Recommendation" />
 
+    <Button
+        android:id="@+id/submitButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice Dialog" />
+
+    <Button
+        android:id="@+id/showlogins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show all previous logins" />
+
+
     <TextView
         android:id="@+id/recommendationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/loginDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
