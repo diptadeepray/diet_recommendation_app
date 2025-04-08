@@ -12,9 +12,8 @@
 **MyAwesomeApp** is a productivity app designed to help users manage their tasks and schedules efficiently. This document provides a comprehensive guide to the app’s source code, including its structure, setup, and development practices.
 ###Scope
 This document covers the setup, architecture, key components, and contribution guidelines for the MyAwesomeApp codebase.
-## Project Structure
+## 📁 Project Structure
 ### Directory Layout
-MyAwesomeApp/
 ```plaintext
 MyAwesomeApp/
 ├── app/
@@ -34,7 +33,7 @@ MyAwesomeApp/
 └── settings.gradle
 ```
 
-## Key Components
+### Key Components
 - activities: Contains Activity classes responsible for UI screens.
 - adapters: Includes adapters for RecyclerView and other UI components.
 - models: Defines data models used in the app.
