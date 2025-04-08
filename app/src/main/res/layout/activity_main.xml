@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,12 +13,6 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/nameInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your name"
-        android:inputType="number" />
 
     <EditText
         android:id="@+id/ageInput"
@@ -21,6 +20,23 @@
         android:layout_height="wrap_content"
         android:hint="Enter your age"
         android:inputType="number" />
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/maleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+        <RadioButton
+            android:id="@+id/femaleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+
 
     <EditText
         android:id="@+id/weightInput"
@@ -28,6 +44,10 @@
         android:layout_height="wrap_content"
         android:hint="Enter your weight (kg)"
         android:inputType="numberDecimal" />
+
+
+
+
 
     <Spinner
         android:id="@+id/activitySpinner"
@@ -60,6 +80,124 @@
             android:text="Vegan" />
     </RadioGroup>
 
+
+    <!-- Height -->
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Height (in cm)" />
+
+
+
+    <!-- Goals Dropdown -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Select your goal"/>
+    <Spinner
+        android:id="@+id/goalsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Checkboxes for conditions -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Medical Conditions"/>
+    <CheckBox
+        android:id="@+id/diabetesCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="Diabetes"/>
+    <CheckBox
+        android:id="@+id/hypertensionCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hypertension"/>
+    <CheckBox
+        android:id="@+id/thyroidCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thyroid Issues"/>
+    <CheckBox
+        android:id="@+id/allergyCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food allergies/intolerances"/>
+
+    <!-- Wake-up time -->
+    <EditText
+        android:id="@+id/wakeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wake-up Time"
+        android:inputType="time" />
+
+    <!-- Meal timings -->
+    <EditText
+        android:id="@+id/breakfastTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Breakfast Time"
+        android:inputType="time" />
+    <EditText
+        android:id="@+id/lunchTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lunch Time"
+        android:inputType="time" />
+    <EditText
+        android:id="@+id/dinnerTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dinner Time"
+        android:inputType="time" />
+    <EditText
+        android:id="@+id/snacksTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Snacks Time"
+        android:inputType="time" />
+
+    <!-- Sleep schedule -->
+    <EditText
+        android:id="@+id/sleepSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sleep Time"
+        android:inputType="time" />
+
+    <!-- Work/study hours -->
+    <EditText
+        android:id="@+id/workHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Work/Study Hours"
+        android:inputType="numberDecimal" />
+
+    <!-- Water intake -->
+    <EditText
+        android:id="@+id/waterIntake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Liters of Water Intake"
+        android:inputType="numberDecimal" />
+
+    <!-- Junk food intake -->
+    <EditText
+        android:id="@+id/junkIntake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Junk Food Intake (per week)"
+        android:inputType="number" />
+
+
+
     <Button
         android:id="@+id/chooseTimeAndData"
         android:layout_width="match_parent"
@@ -74,16 +212,16 @@
         android:text="Get Recommendation" />
 
     <Button
-        android:id="@+id/submitButton2"
+        android:id="@+id/choiceDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choice Dialog" />
 
     <Button
-        android:id="@+id/showlogins"
+        android:id="@+id/showPreviousData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show all previous logins" />
+        android:text="Show all previous data" />
 
 
     <TextView
@@ -94,10 +232,12 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/loginDetails"
+        android:id="@+id/previousDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textSize="16sp" />
 
 </LinearLayout>
+
+</ScrollView>

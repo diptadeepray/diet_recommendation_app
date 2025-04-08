@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Username, if account already exists"
+        android:textSize="18sp"
+        android:padding="5sp"
+        android:textStyle="italic"/>
+
+    <Spinner
+        android:id="@+id/tableSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Account"
+        android:layout_margin="16dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/newUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User? Create Account"
+        android:textColor="@android:color/holo_blue_dark"
+
+
+        android:layout_gravity="center"
+        />
+</LinearLayout>
