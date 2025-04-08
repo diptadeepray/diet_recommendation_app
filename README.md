@@ -15,7 +15,25 @@ This document covers the setup, architecture, key components, and contribution g
 ## Project Structure
 ### Directory Layout
 MyAwesomeApp/
-<pre> ```plaintext MyAwesomeApp/ ├── app/ │ ├── src/ │ │ ├── main/ │ │ │ ├── java/com/myawesomeapp/ │ │ │ │ ├── activities/ │ │ │ │ ├── adapters/ │ │ │ │ ├── models/ │ │ │ │ ├── repositories/ │ │ │ │ ├── viewmodels/ │ │ │ │ └── utils/ │ │ │ ├── res/ │ │ │ └── AndroidManifest.xml │ └── build.gradle ├── build.gradle └── settings.gradle ``` </pre>
+```plaintext
+MyAwesomeApp/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/myawesomeapp/
+│   │   │   │   ├── activities/
+│   │   │   │   ├── adapters/
+│   │   │   │   ├── models/
+│   │   │   │   ├── repositories/
+│   │   │   │   ├── viewmodels/
+│   │   │   │   └── utils/
+│   │   │   ├── res/
+│   │   │   └── AndroidManifest.xml
+│   └── build.gradle
+├── build.gradle
+└── settings.gradle
+```
+
 ## Key Components
 -activities: Contains Activity classes responsible for UI screens.
 -adapters: Includes adapters for RecyclerView and other UI components.
