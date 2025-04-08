@@ -1,4 +1,4 @@
-#Diet Recommendation App Documentation
+# Diet Recommendation App Documentation
 ## 🔖 Table of Contents
 - [📌 Introduction](#-introduction)
 - [📁 Project Structure](#-project-structure)
@@ -8,7 +8,7 @@
 - [🔌 API Integration](#-api-integration)
 - [🧪 Testing](#-testing)
 ## 📌 Introduction
-###Overview
+### Overview
 **MyAwesomeApp** is a productivity app designed to help users manage their tasks and schedules efficiently. This document provides a comprehensive guide to the app’s source code, including its structure, setup, and development practices.
 ###Scope
 This document covers the setup, architecture, key components, and contribution guidelines for the MyAwesomeApp codebase.
@@ -30,7 +30,7 @@ MyAwesomeApp/
 │   └── build.gradle
 ├── build.gradle
 └── settings.gradle
-##Key Components
+## Key Components
 -activities: Contains Activity classes responsible for UI screens.
 -adapters: Includes adapters for RecyclerView and other UI components.
 -models: Defines data models used in the app.
