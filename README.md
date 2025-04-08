@@ -35,10 +35,10 @@ MyAwesomeApp/
 ```
 
 ## Key Components
--activities: Contains Activity classes responsible for UI screens.
--adapters: Includes adapters for RecyclerView and other UI components.
--models: Defines data models used in the app.
--repositories: Handles data operations and business logic.
--viewmodels: Manages UI-related data in a lifecycle-conscious way.
--utils: Contains utility classes and helper functions.
+- activities: Contains Activity classes responsible for UI screens.
+- adapters: Includes adapters for RecyclerView and other UI components.
+- models: Defines data models used in the app.
+- repositories: Handles data operations and business logic.
+- viewmodels: Manages UI-related data in a lifecycle-conscious way.
+- utils: Contains utility classes and helper functions.
 
